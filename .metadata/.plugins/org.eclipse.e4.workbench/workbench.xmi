@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;network.java&quot; tooltip=&quot;face-recognition/src/network.java&quot;>&#xA;&lt;persistable path=&quot;/face-recognition/src/network.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Main.java&quot; tooltip=&quot;face-recognition/src/Main.java&quot;>&#xA;&lt;persistable path=&quot;/face-recognition/src/Main.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;img.java&quot; tooltip=&quot;face-recognition/src/img.java&quot;>&#xA;&lt;persistable path=&quot;/face-recognition/src/img.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;LinkedList.class&quot; tooltip=&quot;java.util.LinkedList&quot;>&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=face-recognition/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_60.jdk\/Contents\/Home\/jre\/lib\/rt.jar&amp;lt;java.util(LinkedList.class&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_3JtH8ujKEeW-POL8eo-Fyg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_4bxMwujKEeW-POL8eo-Fyg" label="%trimmedwindow.label.eclipseSDK" x="205" y="28" width="1024" height="706">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_3JtH8ujKEeW-POL8eo-Fyg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_4bxMwujKEeW-POL8eo-Fyg" label="%trimmedwindow.label.eclipseSDK" x="322" y="55" width="1024" height="706">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -247,6 +247,7 @@
                   <children xsi:type="advanced:Placeholder" xmi:id="_SlwtF-jOEeWr7a7QhW66yQ" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_GPvoEOjNEeWr7a7QhW66yQ"/>
                 </children>
                 <children xsi:type="basic:PartStack" xmi:id="_SlwtGOjOEeWr7a7QhW66yQ" elementId="org.eclipse.debug.internal.ui.ToolsFolderView" containerData="5000" selectedElement="_SlwtGejOEeWr7a7QhW66yQ">
+                  <tags>noFocus</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_SlwtGejOEeWr7a7QhW66yQ" elementId="org.eclipse.debug.ui.VariableView" ref="_Slr0kOjOEeWr7a7QhW66yQ"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_SlwtGujOEeWr7a7QhW66yQ" elementId="org.eclipse.debug.ui.BreakpointView" ref="_SlsboOjOEeWr7a7QhW66yQ"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_SlwtG-jOEeWr7a7QhW66yQ" elementId="org.eclipse.debug.ui.ExpressionView" toBeRendered="false" ref="_SlsboejOEeWr7a7QhW66yQ"/>
@@ -309,7 +310,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_s0MG0OjkEeWLQsGHhmOMDg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="network.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;network.java&quot; partName=&quot;network.java&quot; title=&quot;network.java&quot; tooltip=&quot;face-recognition/src/network.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/face-recognition/src/network.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;290&quot; selectionTopPixel=&quot;165&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;network.java&quot; partName=&quot;network.java&quot; title=&quot;network.java&quot; tooltip=&quot;face-recognition/src/network.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/face-recognition/src/network.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2364&quot; selectionTopPixel=&quot;1260&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -515,7 +516,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_4ktGUOjKEeW-POL8eo-Fyg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ismy0OjkEeWLQsGHhmOMDg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_3NKEm-jKEeW-POL8eo-Fyg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_AtMCkOmKEeWOusBzGHqQZw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_3NKEm-jKEeW-POL8eo-Fyg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_4ktGUejKEeW-POL8eo-Fyg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -542,7 +543,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_4kttYujKEeW-POL8eo-Fyg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_isuHkOjkEeWLQsGHhmOMDg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_3NHBZOjKEeW-POL8eo-Fyg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_AtPs8OmKEeWOusBzGHqQZw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_3NHBZOjKEeW-POL8eo-Fyg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_4kttY-jKEeW-POL8eo-Fyg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -932,7 +933,7 @@
       <tags>platform:cocoa</tags>
       <parameters xmi:id="_hzuDAujkEeWLQsGHhmOMDg" elementId="org.eclipse.ui.views.showView.viewId" name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.jdt.ui.PackageExplorer"/>
     </bindings>
-    <bindings xmi:id="_h0mz0OjkEeWLQsGHhmOMDg" keySequence="COMMAND+CTRL+F" command="_3Qr5s-jKEeW-POL8eo-Fyg"/>
+    <bindings xmi:id="__adPYemJEeWOusBzGHqQZw" keySequence="COMMAND+CTRL+F" command="_3Qr5s-jKEeW-POL8eo-Fyg"/>
   </bindingTables>
   <bindingTables xmi:id="_3PkfY-jKEeW-POL8eo-Fyg" elementId="org.eclipse.cdt.ui.cEditorScope" bindingContext="_3NjGN-jKEeW-POL8eo-Fyg"/>
   <bindingTables xmi:id="_3PlGcejKEeW-POL8eo-Fyg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" bindingContext="_3NjGMOjKEeW-POL8eo-Fyg">
@@ -1014,7 +1015,7 @@
   </bindingTables>
   <bindingTables xmi:id="_3P855OjKEeW-POL8eo-Fyg" elementId="org.eclipse.linuxtools.changelog.core.changelogEditorScope" bindingContext="_3NjGNejKEeW-POL8eo-Fyg"/>
   <bindingTables xmi:id="_3QsgxejKEeW-POL8eo-Fyg" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_3JtH9-jKEeW-POL8eo-Fyg">
-    <bindings xmi:id="_h0na4OjkEeWLQsGHhmOMDg" keySequence="M1+W" command="_3Qsgw-jKEeW-POL8eo-Fyg"/>
+    <bindings xmi:id="__ad2cOmJEeWOusBzGHqQZw" keySequence="M1+W" command="_3Qsgw-jKEeW-POL8eo-Fyg"/>
   </bindingTables>
   <bindingTables xmi:id="_5bjOwejKEeW-POL8eo-Fyg" bindingContext="_5bjOwOjKEeW-POL8eo-Fyg"/>
   <bindingTables xmi:id="_5bj10OjKEeW-POL8eo-Fyg" bindingContext="_5bjOwujKEeW-POL8eo-Fyg"/>

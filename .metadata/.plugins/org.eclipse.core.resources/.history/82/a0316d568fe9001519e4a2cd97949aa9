@@ -11,7 +11,7 @@ public class network
   double alpha = 0.01;
   void train(LinkedList<img> list)
   {
-    int num = 200;
+    int num = 300;
     int count;
     
     for(int n = 1; n <= num; n++)
@@ -82,19 +82,19 @@ public class network
         sum = 1.0/(1.0 + Math.exp(-sum));
         outputLayer = sum;
         double r = list.get(i).label;
-        error += (sum - r)*(sum - r);
-        if(outputLayer >= 0.45 && list.get(i).label == 1){
+        error += (sum - list.get(i).label)*(sum - list.get(i).label);
+        if(outputLayer >= 0.5 && list.get(i).label == 1){
           count++;
           c1++;
         }
-        else if (outputLayer < 0.45 && list.get(i).label == 0){
+        else if (outputLayer < 0.5 && list.get(i).label == 0){
           c2++;
           count++;
         }
         
       }//for2
       
-      System.out.println(count+" error is: " + error/list.size() + " male: " + c1 + " female: " + c2);
+      System.out.println(count+" error is: " + error/list.size() + "male: " + c1 + " female: " + c2);
       
     }//num of train
   }//train

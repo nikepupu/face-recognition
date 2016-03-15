@@ -1,0 +1,130 @@
+import java.util.*;
+
+
+public class network
+{
+  private double[] hiddenLayer = new double[6];
+  public double[] outputLayer = new double[2];
+  
+  private double[][] weights1 = new double[15360][6];
+  private double[][] weights2 = new double[6][2];
+  private double[] r = new double[2];
+  double alpha = 0.0000001;
+  void train(LinkedList<img> list)
+  {
+    int num = 300;
+    int count;
+   
+    for(int n = 0; n < num; n++)
+    {
+      for(int i = 1; i < list.size(); i++)
+      {
+      
+        for(int j = 0; j < 6; j++)// hidden layer
+        {
+          double sum = 0;
+          for(int k = 0; k < 15360; k++)
+            sum += list.get(i).res[k] * weights1[k][j];
+          
+          sum = 1.0/(1.0 + Math.exp(-sum));
+          hiddenLayer[j] = sum;
+        }
+        for(int j = 0; j < 2; j++)
+        {
+          double sum = 0;
+          for(int k = 0; k < 6; k++)
+            sum += hiddenLayer[k] * weights2[k][j];
+        
+        
+          sum = 1.0/(1.0 + Math.exp(-sum));
+          outputLayer[j] = sum;
+        }
+        
+        // bp output-hidden
+        if (list.get(i).label == 1)
+        {
+          r[0] = 0;
+          r[1] = 1;
+        }
+        else
+        {
+          r[0] = 1;
+          r[1] = 0;
+        }
+        
+        double[] delta2 = new double[2];
+        for(int j = 0; j < 2; j++)
+          delta2[j] = outputLayer[j] - r[j];
+        
+      
+        
+        for(int j = 0; j < 6; j++)
+          for(int k = 0; k < 2; k++)
+            weights2[j][k] -= alpha*delta2[k]*hiddenLayer[j];
+        
+        //hidden-input
+        double[] delta1 = new double[6];
+        for(int j = 0; j < 6; j++)
+          for(int k = 0; k < 2; k++)
+            delta1[j] += -delta2[k] * weights2[j][k] * (1-hiddenLayer[j])*hiddenLayer[j];
+      
+        
+       
+        for(int j = 0; j < 15360; j++)
+          for(int k = 0; k < 6; k++)
+            weights1[j][k] -= alpha * delta1[k] * list.get(i).res[j];
+          
+        
+        }//for1
+    
+      count = 0;
+      int c1 = 0, c2 = 0;
+      double error = 0;
+      for(int i = 0; i < list.size(); i++)
+      {
+        for(int j = 0; j < 6; j++)// hidden layer
+        {
+          double sum = 0;
+          for(int k = 0; k < 15360; k++)
+            sum += list.get(i).res[k] * weights1[k][j];
+          
+          sum = 1.0/(1.0 + Math.exp(-sum));
+          hiddenLayer[j] = sum;
+        }
+        for(int j = 0; j < 2; j++){
+          double sum = 0;
+          for(int k = 0; k < 6; k++)
+            sum += hiddenLayer[k] * weights2[k][j];
+        
+        
+          sum = 1.0/(1.0 + Math.exp(-sum));
+          outputLayer[j] = sum;
+          }
+        double sum;
+        if ( outputLayer[0] > outputLayer[1])
+          sum = 0;
+        else
+          sum = 1;
+        
+         error += Math.pow(outputLayer[0] - r[0], 2) + Math.pow(outputLayer[1]-r[1], 2);
+          if(sum == 1 && list.get(i).label == 1)
+          {
+            count++;
+            c1++;
+          }
+          else if (sum == 0 && list.get(i).label == 0)
+          {
+            c2++;
+            count++;
+          }
+          
+        
+        
+      }//for2
+
+      System.out.println(count+" error is: " + error/list.size() + "male: " + c1 + " female: " + c2);
+    
+    }//num of train
+  }//train
+  
+}//class

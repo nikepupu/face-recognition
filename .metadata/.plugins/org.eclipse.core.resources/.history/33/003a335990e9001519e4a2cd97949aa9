@@ -8,10 +8,10 @@ public class network
   
   private double[][] weights1 = new double[15360][6];
   private double[] weights2 = new double[6];
-  double alpha = 0.01;
+  double alpha = 0.1;
   void train(LinkedList<img> list)
   {
-    int num = 200;
+    int num = 300;
     int count;
     
     for(int n = 1; n <= num; n++)
@@ -83,18 +83,18 @@ public class network
         outputLayer = sum;
         double r = list.get(i).label;
         error += (sum - r)*(sum - r);
-        if(outputLayer >= 0.45 && list.get(i).label == 1){
+        if(outputLayer >= 0.5 && list.get(i).label == 1){
           count++;
           c1++;
         }
-        else if (outputLayer < 0.45 && list.get(i).label == 0){
+        else if (outputLayer < 0.5 && list.get(i).label == 0){
           c2++;
           count++;
         }
         
       }//for2
       
-      System.out.println(count+" error is: " + error/list.size() + " male: " + c1 + " female: " + c2);
+      System.out.println(count+" error is: " + error/list.size() + "male: " + c1 + " female: " + c2);
       
     }//num of train
   }//train
